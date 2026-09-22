@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piyush Kumar Singh — Full-Stack Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Piyush Kumar Singh — Final-year B.Tech CSE student specializing in full-stack web development with React, Node.js, and MongoDB." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ======== HEADER / NAV ======== -->
+  <header id="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a href="#hero" class="nav-logo">&lt;PS /&gt;</a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <span class="theme-icon sun" aria-hidden="true">☀️</span>
+        <span class="theme-icon moon" aria-hidden="true">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ======== HERO ======== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Piyush Kumar Singh</h1>
+        <p class="hero-tagline">Full-Stack Developer · Building scalable web apps that solve real problems.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <!-- Animated floating shapes (decorative) -->
+        <div class="hero-shapes" aria-hidden="true">
+          <span class="shape shape-1"></span>
+          <span class="shape shape-2"></span>
+          <span class="shape shape-3"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== ABOUT ======== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a final-year <strong>B.Tech Computer Science &amp; Engineering</strong> student at
+              Raj Kumar Goel Institute of Technology, Ghaziabad — expected to graduate in <strong>2027</strong>.
+            </p>
+            <p>
+              With hands-on experience in <strong>full-stack web development</strong>, I love turning ideas into
+              polished, user-friendly applications. I'm well-versed in the MERN stack and passionate about
+              leveraging AI tools to accelerate development and solve business problems.
+            </p>
+            <p>
+              When I'm not coding, you'll find me mentoring teams at hackathons, coordinating athletics events,
+              or exploring new tech.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <span class="highlight-number">7.5</span>
+                <span class="highlight-label">CGPA</span>
+              </div>
+              <div class="highlight-card">
+                <span class="highlight-number">3+</span>
+                <span class="highlight-label">Projects</span>
+              </div>
+              <div class="highlight-card">
+                <span class="highlight-number">3</span>
+                <span class="highlight-label">Certifications</span>
+              </div>
+              <div class="highlight-card">
+                <span class="highlight-number">SIH</span>
+                <span class="highlight-label">Top 50 Teams</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SKILLS ======== -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <!-- Filter buttons -->
+        <div class="skill-filters" role="group" aria-label="Filter skills by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="languages">Languages</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="tools">Tools &amp; AI</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon">🇨</div>
+            <span class="skill-name">C</span>
+          </div>
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon">🐍</div>
+            <span class="skill-name">Python</span>
+          </div>
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon">☕</div>
+            <span class="skill-name">Java</span>
+          </div>
+          <div class="skill-card" data-category="languages">
+            <div class="skill-icon">📜</div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <!-- Frontend -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">🌐</div>
+            <span class="skill-name">HTML5</span>
+          </div>
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">🎨</div>
+            <span class="skill-name">CSS3</span>
+          </div>
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">⚛️</div>
+            <span class="skill-name">React.js</span>
+          </div>
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">💨</div>
+            <span class="skill-name">Tailwind CSS</span>
+          </div>
+          <!-- Backend -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">🟢</div>
+            <span class="skill-name">Node.js</span>
+          </div>
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">🚂</div>
+            <span class="skill-name">Express.js</span>
+          </div>
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">🍃</div>
+            <span class="skill-name">MongoDB</span>
+          </div>
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">🔗</div>
+            <span class="skill-name">REST APIs</span>
+          </div>
+          <!-- Tools & AI -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon">🔀</div>
+            <span class="skill-name">Git &amp; GitHub</span>
+          </div>
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon">💻</div>
+            <span class="skill-name">VS Code</span>
+          </div>
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon">🤖</div>
+            <span class="skill-name">ChatGPT / Gemini</span>
+          </div>
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon">⚡</div>
+            <span class="skill-name">Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJECTS ======== -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Project 1 — JobSphere -->
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder" aria-hidden="true">
+                <span>🧑‍💼</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">JobSphere</h3>
+              <p class="project-subtitle">Job Portal Platform</p>
+              <p class="project-desc">
+                A full-stack job portal connecting job seekers and recruiters through a unified platform.
+                Features job posting, search, application tracking, JWT-based authentication, and RESTful APIs
+                linking frontend, backend, and database.
+              </p>
+              <ul class="project-tech">
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Piyushsingh1212" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-small btn-outline">
+                  <span aria-hidden="true">⟨/⟩</span> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 — Airbnb Clone -->
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder" aria-hidden="true">
+                <span>🏠</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Airbnb Clone</h3>
+              <p class="project-subtitle">Responsive Booking UI</p>
+              <p class="project-desc">
+                An Airbnb-inspired frontend with modern UI components, dynamic navigation using React Router,
+                and reusable, scalable components styled with Tailwind CSS for a polished booking experience.
+              </p>
+              <ul class="project-tech">
+                <li>React.js</li>
+                <li>React Router</li>
+                <li>Tailwind CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Piyushsingh1212" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-small btn-outline">
+                  <span aria-hidden="true">⟨/⟩</span> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 — Portfolio Website -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-subtitle">I'm always open to new opportunities, collaborations, or just a friendly chat about
+          tech.</p>
+
+        <div class="contact-grid">
+          <a href="mailto:piyushsingh3199@gmail.com" class="contact-card" id="contact-email">
+            <span class="contact-icon">✉️</span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">piyushsingh3199@gmail.com</span>
+          </a>
+
+          <a href="https://github.com/Piyushsingh1212" target="_blank" rel="noopener noreferrer" class="contact-card"
+            id="contact-github">
+            <span class="contact-icon">🐙</span>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">Piyushsingh1212</span>
+          </a>
+
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="contact-card"
+            id="contact-linkedin">
+            <span class="contact-icon">💼</span>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Piyush Kumar Singh</span>
+          </a>
+
+          <a href="tel:+919205205158" class="contact-card" id="contact-phone">
+            <span class="contact-icon">📞</span>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 92052 05158</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer id="site-footer">
+    <div class="container footer-content">
+      <p class="footer-text">&copy; 2026 Piyush Kumar Singh. Built with ❤️ and vanilla code.</p>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
